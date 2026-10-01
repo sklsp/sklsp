@@ -22,9 +22,9 @@ Rotterdam. Part-time IT student at Avans (2026–2030), working at KPN, aiming f
 
 ## Stack
 
-Python · OpenCV + NumPy · PostgreSQL · Redis · ffmpeg · Stripe webhooks · Veo 3.1 / Seedance 2.5 (WaveSpeed)
+Python · FastAPI · PostgreSQL · Redis · Docker · Playwright · OpenCV + NumPy · ffmpeg · Stripe · LLM APIs (OpenRouter) · Veo 3.1 / Seedance 2.5
 
 ## Contact
 
-- LinkedIn: [LinkedIn URL]
-- Email: [email]
+- LinkedIn: https://www.linkedin.com/in/jay-de-lauw-653915231/
+- Email: jaydelauw@gmail.com
