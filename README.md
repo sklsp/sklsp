@@ -21,7 +21,7 @@ Rotterdam. Part-time IT student at Avans (2026-2030), working at KPN, aiming for
 ## How I work
 
 - **Evals before claims.** fidelity ships with an eval of 400 pairs (benign edits plus four tamper types at three sizes); one padding fix cut false alarms from 25% to 4%.
-- **Tests that exercise the real thing.** Sparton: 525 tests pass in CI, including 29 driving a real browser through signup, the product loop and tenant isolation.
+- **Tests that exercise the real thing.** Sparton: 549 tests pass in CI, including 33 driving a real browser through signup, the product loop and tenant isolation.
 - **Cost and security are first-class constraints.** Hard budget caps with an append-only ledger; crawlers can't be pointed inward. Public addresses only on every redirect hop, DNS rebinding caught, bodies streamed and capped at 20 MB.
 
 ## Stack
