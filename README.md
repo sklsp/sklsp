@@ -2,7 +2,7 @@
 
 Rotterdam. Part-time IT student at Avans (2026-2030), working at KPN, aiming for an AI Engineer role. I build AI products that ship, with evals to prove they work and tests to keep them honest.
 
-**Portfolio: [delauw.vercel.app](https://delauw.vercel.app)**, my web design studio and products, built as one scroll-driven 3D flight (three.js, no framework).
+**Portfolio: [studiobijblijvers.com](https://studiobijblijvers.com)**, my web design studio and products, built as one scroll-driven 3D flight (three.js, no framework).
 
 ## Building now
 
