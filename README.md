@@ -8,6 +8,8 @@ Rotterdam. Part-time IT student at Avans (2026-2030), working at KPN, aiming for
 
 **[Sparton](https://github.com/sklsp/Sparton)** (public): competitor intelligence for small e-commerce sellers: add your shop URL and it discovers who you actually compete against, crawls them on a schedule, diffs catalogs week over week and writes a plain-English report with evidence links. The hard part solved: the numbers are computed by a diff engine and the AI only writes the summary. It never invents a price.
 
+**leadscan** (private): finds local businesses that need a better website, and runs the sales side of my web studio. It pulls businesses from OpenStreetMap, finds their website through the Google Places API (matched on name and distance, so a namesake across town is not a hit), tests every site (https, mobile, speed, copyright year, CMS version) and has a local vision model in LM Studio rate the design from desktop and phone screenshots as structured JSON. The hard part solved: every score explains itself. Each point comes from one weights table, the dashboard shows the three heaviest factors, and every model verdict is labelled "AI impression" next to the screenshot it judged, so a person can check it. A FastAPI dashboard runs the whole flow: scans with a cost estimate up front and live progress, a CRM pipeline, quotes, and invoices with an unbroken numbering and credit invoices instead of edits, plus an offline demo mode on a copy of real scans. 516 tests; Google calls stop at a monthly budget under the free tier.
+
 **Iris** (private): a voice agent that runs my machine. It listens for a wake word, reads the screen through Windows UI Automation and asks before it changes anything. The hard part solved: the risk tiers live in code, not in the prompt, so a clever prompt cannot talk it into a destructive action. Fully local: no cloud, no cost per command.
 
 **Vistora** (private): AI property walkthrough films from listing photos, 16:9 plus a vertical cut. The hard part solved: video models invent things, so every clip is anchored to a real photo every 4-8 s and structurally QA'd before a human sees it.
@@ -21,12 +23,13 @@ Rotterdam. Part-time IT student at Avans (2026-2030), working at KPN, aiming for
 ## How I work
 
 - **Evals before claims.** fidelity ships with an eval of 400 pairs (benign edits plus four tamper types at three sizes); one padding fix cut false alarms from 25% to 4%.
+- **Model output stays checkable.** leadscan never shows a vision-model verdict on its own: it is labelled as an AI impression and sits next to the screenshot it judged.
 - **Tests that exercise the real thing.** Sparton: 549 tests pass in CI, including 33 driving a real browser through signup, the product loop and tenant isolation.
 - **Cost and security are first-class constraints.** Hard budget caps with an append-only ledger; crawlers can't be pointed inward. Public addresses only on every redirect hop, DNS rebinding caught, bodies streamed and capped at 20 MB.
 
 ## Stack
 
-Python · FastAPI · PostgreSQL · Redis · Docker · Playwright · OpenCV + NumPy · ffmpeg · Stripe · LLM APIs (OpenRouter) · Veo 3.1 / Seedance 2.5
+Python · FastAPI · Jinja2 · PostgreSQL · Redis · Docker · Playwright · OpenCV + NumPy · ffmpeg · Stripe · LLM APIs (OpenRouter) · local vision models (LM Studio) · Veo 3.1 / Seedance 2.5
 
 ## Contact
 
